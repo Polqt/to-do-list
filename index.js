@@ -47,8 +47,6 @@ function addTask() {
       const update = prompt("Edit the following task: ", taskSpan.textContent);
       if (update !== null) {
         taskSpan.textContent = update;
-        listOfTask.classList.remove("completed");
-        checkbox.checked = false;
         updateTask();
       }
     });
@@ -61,4 +59,3 @@ function addTask() {
     });
     updateTask();
 }
-
